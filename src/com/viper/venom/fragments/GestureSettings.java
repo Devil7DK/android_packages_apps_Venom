@@ -109,7 +109,7 @@ public class GestureSettings extends SettingsPreferenceFragment implements
             String navBarOverride = SystemProperties.get("qemu.hw.mainkeys");
             if ("1".equals(navBarOverride)) {
                 needsNavbar = false;
-            } else if ("0".equals(navBarOverride)) {
+            } else {
                 needsNavbar = true;
             }
             LineageSettings.System.putIntForUser(getContext().getContentResolver(),
